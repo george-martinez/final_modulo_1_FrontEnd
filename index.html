@@ -7,6 +7,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=K2D:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,400&display=swap" rel="stylesheet">
+    <link rel="icon" type="image/png" href="./img/pomodoro.png">
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <title>Pomodoro</title>
@@ -21,28 +22,40 @@
         
         <i class="fa-solid fa-bars"></i>
 
+        <div class="nav_bar_desktop">
+            <p>Beneficios</p>
+            <p>Cómo funciona</p>
+            <p>Testimonios</p>
+            <button>USAR</button>
+        </div>
+
     </nav>
 
     <section class="box_all_sections">
         <section class="box_Presentation">
             <img src="./img/pomodoro2.png" alt="Red tomato with center measures, Pomodoro logo">
-            <h2>Pomodoro</h2>
-            <p>La legendaria técnica de control del tiempo</p>
+            <div class="presentation_text">
+                <h2>Pomodoro</h2>
+                <p>La legendaria técnica de control del tiempo</p>
+            </div>
         </section>
         <section class="box_Description">
             <h2>La mejor técnica</h2>
-            <p>Científicamente, la técnica pomodoro se puede aplicar a virtualmente cualquier actividad.</p>
-            <div class="circle_1">
-                <p>Mejor manejo del tiempo</p>
-            </div>
-            <div class="circle_2">
-                <p>Más conocimiento sobre nuestros límites</p>
-            </div>
-            <div class="circle_3">
-                <p>Mayor Bienestar</p>
+            <p class="description_text">Científicamente, la técnica pomodoro se puede aplicar a virtualmente cualquier actividad.</p>
+            
+            <div class="box_circles">
+                <div class="circle_1">
+                    <p>Mejor manejo del tiempo</p>
+                </div>
+                <div class="circle_2">
+                    <p>Más conocimiento sobre nuestros límites</p>
+                </div>
+                <div class="circle_3">
+                    <p>Mayor Bienestar</p>
+                </div>
             </div>
         </section>
-        <section class="box_Download">
+        <section class="box_Download_mobile">
             <h2>Es sencillo</h2>
             <p>Trabajá por 25 minutos,</p>
             <p>Descansa 5</p>
@@ -51,6 +64,28 @@
             <button class="button_download_app_PC">App para PC</button>
             <button class="button_download_app_Mobile">App móvil</button>
         </section>
+        
+        <section class="box_Download_desktop">
+
+            <div class="box_download_text_and_buttons">
+                <h2>Es sencillo</h2>
+                <p>Trabajá por 25 minutos,</p>
+                <p>Descansa 5</p>
+                <p>Repetí</p>
+                <p>Podés utilizar un timer convencional o bien cualquiera de las cientos de aplicaciones</p>             
+                <div class="box_Download_desktop_buttons">
+                    <button class="button_download_app_PC">App para PC</button>
+                    <button class="button_download_app_Mobile">App móvil</button>
+                </div>
+            </div>
+            
+
+            <img src="./img/pomodoroapp.png" alt="Celphone with pomodoro app on the background">
+
+        </section>
+
+
+
         <section class="box_Testimony">
             <h2>Testimonios</h2>
             <div class="testimony_1">
