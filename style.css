@@ -1,3 +1,113 @@
+/* ----------------------------------------------
+ * Licensed under FreeBSD License.
+ * See http://animista.net/license for more info. 
+ * w: http://animista.net, t: @cssanimista
+ * ---------------------------------------------- */
+@-webkit-keyframes jello-horizontal {
+  0% {
+    -webkit-transform: scale3d(1, 1, 1);
+            transform: scale3d(1, 1, 1);
+  }
+  30% {
+    -webkit-transform: scale3d(1.25, 0.75, 1);
+            transform: scale3d(1.25, 0.75, 1);
+  }
+  40% {
+    -webkit-transform: scale3d(0.75, 1.25, 1);
+            transform: scale3d(0.75, 1.25, 1);
+  }
+  50% {
+    -webkit-transform: scale3d(1.15, 0.85, 1);
+            transform: scale3d(1.15, 0.85, 1);
+  }
+  65% {
+    -webkit-transform: scale3d(0.95, 1.05, 1);
+            transform: scale3d(0.95, 1.05, 1);
+  }
+  75% {
+    -webkit-transform: scale3d(1.05, 0.95, 1);
+            transform: scale3d(1.05, 0.95, 1);
+  }
+  100% {
+    -webkit-transform: scale3d(1, 1, 1);
+            transform: scale3d(1, 1, 1);
+  }
+}
+@keyframes jello-horizontal {
+  0% {
+    -webkit-transform: scale3d(1, 1, 1);
+            transform: scale3d(1, 1, 1);
+  }
+  30% {
+    -webkit-transform: scale3d(1.25, 0.75, 1);
+            transform: scale3d(1.25, 0.75, 1);
+  }
+  40% {
+    -webkit-transform: scale3d(0.75, 1.25, 1);
+            transform: scale3d(0.75, 1.25, 1);
+  }
+  50% {
+    -webkit-transform: scale3d(1.15, 0.85, 1);
+            transform: scale3d(1.15, 0.85, 1);
+  }
+  65% {
+    -webkit-transform: scale3d(0.95, 1.05, 1);
+            transform: scale3d(0.95, 1.05, 1);
+  }
+  75% {
+    -webkit-transform: scale3d(1.05, 0.95, 1);
+            transform: scale3d(1.05, 0.95, 1);
+  }
+  100% {
+    -webkit-transform: scale3d(1, 1, 1);
+            transform: scale3d(1, 1, 1);
+  }
+}
+
+@-webkit-keyframes scale-up {
+  0% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+  100% {
+    -webkit-transform: scale(1.2);
+            transform: scale(1.2);
+  }
+}
+
+@keyframes scale-up {
+  0% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+  100% {
+    -webkit-transform: scale(1.2);
+            transform: scale(1.2);
+  }
+}
+
+/* ------------------------------------------------ */
+@-webkit-keyframes scale-less-up {
+  0% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+  100% {
+    -webkit-transform: scale(1.1);
+            transform: scale(1.1);
+  }
+}
+@keyframes scale-less-up {
+  0% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+  100% {
+    -webkit-transform: scale(1.1);
+            transform: scale(1.1);
+  }
+}
+
 * {
   font-family: "K2D", sans-serif;
   text-align: center;
@@ -366,10 +476,11 @@ footer p {
     font-weight: 700;
     margin: 0;
   }
-  p {
+  p, a {
     font-size: 36px;
     font-weight: 400;
     margin: 0;
+    text-decoration: none;
   }
   .nav_bar {
     height: 81px;
@@ -381,6 +492,11 @@ footer p {
   .nav_bar .nav_bar_logo_and_title h2 {
     font-size: 36px;
     font-weight: 700;
+  }
+  .nav_bar .nav_bar_logo_and_title h2:hover {
+    color: #f12933;
+    -webkit-transition: color 0.4s ease;
+    transition: color 0.4s ease;
   }
   .nav_bar .fa-bars {
     display: none;
@@ -394,11 +510,18 @@ footer p {
             align-items: center;
     width: 730px;
   }
-  .nav_bar .nav_bar_desktop p {
+  .nav_bar .nav_bar_desktop a {
     width: 175px;
     font-size: 24px;
     color: #686868;
     text-align: center;
+  }
+  .nav_bar .nav_bar_desktop a:hover {
+    color: #363535;
+    -webkit-transition: color 0.4s ease;
+    transition: color 0.4s ease;
+    -webkit-animation: scale-less-up 0.4s cubic-bezier(0.39, 0.575, 0.565, 1) both;
+            animation: scale-less-up 0.4s cubic-bezier(0.39, 0.575, 0.565, 1) both;
   }
   .nav_bar .nav_bar_desktop button {
     width: 205px;
@@ -410,6 +533,13 @@ footer p {
     border: none;
     margin-right: 35px;
     text-align: center;
+  }
+  .nav_bar .nav_bar_desktop button:hover {
+    background-color: #f12933;
+    -webkit-transition: background-color 0.4s ease;
+    transition: background-color 0.4s ease;
+    -webkit-animation: scale-less-up 0.4s cubic-bezier(0.39, 0.575, 0.565, 1) both;
+            animation: scale-less-up 0.4s cubic-bezier(0.39, 0.575, 0.565, 1) both;
   }
   .box_Presentation {
     -webkit-box-orient: horizontal;
@@ -469,6 +599,12 @@ footer p {
   .box_Description .circle_3 p {
     font-size: 24px;
     text-align: center;
+  }
+  .box_Description .circle_1:hover,
+  .box_Description .circle_2:hover,
+  .box_Description .circle_3:hover {
+    -webkit-animation: scale-up 0.4s cubic-bezier(0.39, 0.575, 0.565, 1) both;
+            animation: scale-up 0.4s cubic-bezier(0.39, 0.575, 0.565, 1) both;
   }
   .box_Download_mobile {
     display: none;
@@ -533,6 +669,13 @@ footer p {
     border: none;
     margin: 0;
   }
+  .box_Download_desktop .box_download_text_and_buttons .box_Download_desktop_buttons .button_download_app_PC:hover, .box_Download_desktop .box_download_text_and_buttons .box_Download_desktop_buttons .button_download_app_Mobile:hover {
+    background-color: #f12933;
+    -webkit-transition: background-color 0.4s ease;
+    transition: background-color 0.4s ease;
+    -webkit-animation: scale-up 0.4s cubic-bezier(0.39, 0.575, 0.565, 1) both;
+            animation: scale-up 0.4s cubic-bezier(0.39, 0.575, 0.565, 1) both;
+  }
   .box_Testimony {
     height: 382px;
     -ms-grid-columns: (1fr)[3];
@@ -584,6 +727,14 @@ footer p {
             align-items: center;
     width: 261px;
     font-size: 36px;
+  }
+  .box_Contact_us_try_it .button_contact_us:hover {
+    background-color: #34495e;
+    color: #ffffff;
+    -webkit-transition: color 0.4s 0.1s linear;
+    transition: color 0.4s 0.1s linear;
+    -webkit-animation: jello-horizontal 0.9s both;
+            animation: jello-horizontal 0.9s both;
   }
   footer {
     height: 137px;

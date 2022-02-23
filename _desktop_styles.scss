@@ -8,10 +8,11 @@ h2 {
   margin: 0;
 }
 
-p {
+p, a {
   font-size: $subtitle_desktop_size;
   font-weight: 400;
   margin: 0;
+  text-decoration: none;
 }
 
 .nav_bar {
@@ -23,6 +24,10 @@ p {
     h2 {
       font-size: 36px;
       font-weight: 700;
+      &:hover{
+        color: $darker_text_color_2;
+        transition: color 0.4s ease;
+      }
     }
   }
   .fa-bars {
@@ -32,16 +37,26 @@ p {
     display: flex;
     align-items: center;
     width: 730px;
-    p {
+    a {
       width: 175px;
       font-size: 24px;
       color: $text_color_3;
       text-align: center;
+      &:hover{
+        color: rgb(54, 53, 53);
+        transition: color 0.4s ease;
+        animation: scale-less-up 0.4s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
+      }
     }
     button {
       @include default_button_form_and_size();
       margin-right: 35px;
       text-align: center;
+      &:hover{
+        background-color: $darker_text_color_2;
+        transition: background-color 0.4s ease;
+        animation: scale-less-up 0.4s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
+      }
     }
   }
 }
@@ -87,6 +102,9 @@ p {
       font-size: 24px;
       text-align: center;
     }
+    &:hover{
+      animation: scale-up 0.4s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
+    }
   }
 }
 
@@ -127,10 +145,16 @@ p {
         margin: 0 67px 0 0;
         @include default_button_form_and_size();
       }
-
       .button_download_app_Mobile {
         @include default_button_form_and_size();
         margin: 0;
+      }
+      .button_download_app_PC, .button_download_app_Mobile{
+        &:hover{
+          background-color: $darker_text_color_2;
+          transition: background-color 0.4s ease;
+          animation: scale-up 0.4s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
+        }
       }
     }
   }
@@ -161,12 +185,19 @@ p {
 
 .box_Contact_us_try_it {
   height: 458px;
+  
   .button_contact_us {
     display: flex;
     justify-content: center;
     align-items: center;
     width: 261px;
     font-size: 36px;
+    &:hover{
+      background-color: $section_background_color_3;
+      color: $text_color_4;
+      transition: color 0.4s 0.1s linear;
+      animation: jello-horizontal 0.9s both;
+    }
   }
 }
 

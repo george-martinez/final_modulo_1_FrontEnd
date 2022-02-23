@@ -5,6 +5,7 @@ $section_background_color_3: #34495e;
 $circle_color: #fc4850;
 $nav_text_and_bar_color: #ce5d5b;
 $text_color_1: #5b5656;
+$darker_text_color_2: #f12933;
 $text_color_2: #fc4850;
 $text_color_3: #686868;
 $text_color_4: #ffffff;
@@ -67,3 +68,51 @@ $subtitle_desktop_size: 36px;
       }
     }
   }
+
+  /* ----------------------------------------------
+ * Licensed under FreeBSD License.
+ * See http://animista.net/license for more info. 
+ * w: http://animista.net, t: @cssanimista
+ * ---------------------------------------------- */
+@keyframes jello-horizontal {
+  0% {
+    transform: scale3d(1, 1, 1);
+  }
+  30% {
+    transform: scale3d(1.25, 0.75, 1);
+  }
+  40% {
+    transform: scale3d(0.75, 1.25, 1);
+  }
+  50% {
+    transform: scale3d(1.15, 0.85, 1);
+  }
+  65% {
+    transform: scale3d(0.95, 1.05, 1);
+  }
+  75% {
+    transform: scale3d(1.05, 0.95, 1);
+  }
+  100% {
+    transform: scale3d(1, 1, 1);
+  }
+}
+
+@keyframes scale-up {
+  0% {
+    transform: scale(1);
+  }
+  100% {
+    transform: scale(1.2);
+  }
+}
+/* ------------------------------------------------ */
+
+@keyframes scale-less-up {
+  0% {
+    transform: scale(1);
+  }
+  100% {
+    transform: scale(1.1);
+  }
+}
