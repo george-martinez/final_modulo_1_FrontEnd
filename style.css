@@ -194,6 +194,7 @@ button {
 
 .nav_bar .nav_bar_logo_and_title h2 {
   font-size: 22px;
+  font-weight: 400;
   color: #ce5d5b;
 }
 
@@ -513,6 +514,7 @@ footer p {
   }
   .nav_bar .nav_bar_logo_and_title h2 {
     font-size: 36px;
+    font-weight: 400;
   }
   .nav_bar .nav_bar_logo_and_title h2:hover {
     color: #f12933;

@@ -23,6 +23,7 @@ p, a {
     }
     h2 {
       font-size: 36px;
+      font-weight: 400;
       &:hover{
         color: $darker_text_color_2;
         transition: color 0.4s ease;
