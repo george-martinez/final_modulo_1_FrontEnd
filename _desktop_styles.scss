@@ -23,7 +23,7 @@ p, a {
     }
     h2 {
       font-size: 36px;
-      font-weight: 700;
+      font-weight: 400;
       &:hover{
         color: $darker_text_color_2;
         transition: color 0.4s ease;
@@ -87,15 +87,12 @@ p, a {
   .description_text {
     margin: 0 200px 0 58px;
   }
-
   .box_circles {
     display: flex;
     width: 100vw;
     justify-content: space-around;
   }
-  .circle_1,
-  .circle_2,
-  .circle_3 {
+  .circle_1, .circle_2, .circle_3 {
     margin: 48px 0 48px 0;
     justify-self: center;
     p {
@@ -126,8 +123,7 @@ p, a {
   p {
     width: 450px;
   }
-  p:nth-child(4),
-  p:nth-child(5) {
+  p:nth-child(4), p:nth-child(5) {
     margin-bottom: 25px;
   }
   img {
