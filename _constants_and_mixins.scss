@@ -106,6 +106,16 @@ $subtitle_desktop_size: 36px;
     transform: scale(1.2);
   }
 }
+
+@keyframes slide-right {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(5px);
+  }
+}
+
 /* ------------------------------------------------ */
 
 @keyframes scale-less-up {
@@ -116,3 +126,5 @@ $subtitle_desktop_size: 36px;
     transform: scale(1.1);
   }
 }
+
+

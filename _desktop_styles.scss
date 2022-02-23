@@ -23,10 +23,10 @@ p, a {
     }
     h2 {
       font-size: 36px;
-      font-weight: 400;
       &:hover{
         color: $darker_text_color_2;
         transition: color 0.4s ease;
+        animation: slide-right 0.4s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
       }
     }
   }

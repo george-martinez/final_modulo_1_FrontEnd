@@ -86,6 +86,28 @@
   }
 }
 
+@-webkit-keyframes slide-right {
+  0% {
+    -webkit-transform: translateX(0);
+            transform: translateX(0);
+  }
+  100% {
+    -webkit-transform: translateX(5px);
+            transform: translateX(5px);
+  }
+}
+
+@keyframes slide-right {
+  0% {
+    -webkit-transform: translateX(0);
+            transform: translateX(0);
+  }
+  100% {
+    -webkit-transform: translateX(5px);
+            transform: translateX(5px);
+  }
+}
+
 /* ------------------------------------------------ */
 @-webkit-keyframes scale-less-up {
   0% {
@@ -172,7 +194,6 @@ button {
 
 .nav_bar .nav_bar_logo_and_title h2 {
   font-size: 22px;
-  font-weight: 400;
   color: #ce5d5b;
 }
 
@@ -492,12 +513,13 @@ footer p {
   }
   .nav_bar .nav_bar_logo_and_title h2 {
     font-size: 36px;
-    font-weight: 400;
   }
   .nav_bar .nav_bar_logo_and_title h2:hover {
     color: #f12933;
     -webkit-transition: color 0.4s ease;
     transition: color 0.4s ease;
+    -webkit-animation: slide-right 0.4s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
+            animation: slide-right 0.4s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
   }
   .nav_bar .fa-bars {
     display: none;
